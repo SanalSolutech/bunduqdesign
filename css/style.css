@@ -748,13 +748,21 @@ iframe {
 .img-side .owl-item .item {
     height: 100%
 }
+
 .footer-circlelogo {
-    width: 92%;
+    width: 100%;
 }
+
 .career {
     margin-bottom: 40px;
     margin-top: 20px;
 }
+
 button.fontbutton {
     background: #f1f1f200;
+}
+
+button.fontbutton.btn.btn-sm.btn-border.btn-radius.mb-2 {
+    height: 36px;
+    margin: 2px;
 }
