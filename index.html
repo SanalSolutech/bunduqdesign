@@ -57,7 +57,30 @@
         .body {
             font-size: 20px;
         }
-    </style>
+ 
+
+    body {
+        overflow-x: hidden;
+    }
+    
+    .video-container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    iframe {
+        position: absolute;
+        top: -10%;
+        width: 100vw;
+        height: 117vh;
+        pointer-events: none;
+    }
+</style>
+
+
+
 </head>
 
 <body>
@@ -132,6 +155,7 @@
                                                 </li>
                                         </ul>
                                     </div>
+                                    <a class="btn btn-theme btn-radius animated7" href="portal" target="_blank" style="text-transform: capitalize;background: #2b2e93;">iSupplier Portal</a>
                                 </nav>
                             </div>
                         </div>
@@ -144,13 +168,45 @@
 
 
             <!--hero section start-->
-            <section class="banner p-0 position-relative fullscreen-banner text-center">
+
+
+
+
+
+
+            
+            <section class="banner p-0 position-relative fullscreen-banner ">
                 <div class="banner-slider owl-carousel no-pb" data-dots="false" data-nav="true">
-                    <div class="item" data-bg-img="images/bg/slider2.jpg" data-overlay="6">
+                    <div class="video-container" >
+                  
+         <iframe class="slidevideo" src="https://www.youtube.com/embed/Dv9P9KLmC78?mute=1&modestbranding=0&autoplay=1&autohide=1&rel=0&showinfo=0&controls=0&disablekb=1&enablejsapi=1&iv_load_policy=3&loop=1&playsinline=1&fs=0&playlist=Dv9P9KLmC78"></iframe> 
+
+    <div class="overlay-content"></div>
+    
+            
+            <!--   <video autoplay="autoplay">
+                    <source src="images/videoslider.MP4" type="video/mp4"></video>-->
                         <div class="align-center">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-10 col-md-12 mx-auto">
+                                  <!--  <div class="col-lg-10 col-md-12 mx-auto">
+                                        <div class="box-shadow p-sm-5 p-2 banner-1 position-relative" data-bg-color="rgba(255,255,255,0.030)">
+                                            <h5 class="text-white mb-3 letter-space-3 animated6">Bunduq Company Limited</h5>
+                                            <h1 class="text-white mb-3 animated8">Oil <span class="text-theme">And</span> Gas <span class="text-theme">Producing</span> Company</h1>
+                                            <p class="lead text-white animated5 mb-3"> Located on the border of the Emirate of Abu Dhabi and State of Qatar, .
+                                            </p> <a class="btn btn-theme btn-radius animated7" href="about.html">Learn More</a>
+                                            <a class="btn btn-border btn-radius animated6" href="contact.html">Contact US</a>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               <div class="item" data-bg-img="images/bg/slider2.jpg" >
+                        <div class="align-center">
+                            <div class="container">
+                                <div class="row">
+                                    <!--   <div class="col-lg-10 col-md-12 mx-auto">
                                         <div class="box-shadow p-sm-5 p-2 banner-1 position-relative" data-bg-color="rgba(255,255,255,0.030)">
                                             <h5 class="text-white mb-3 letter-space-3 animated6">Bunduq </h5>
                                             <h1 class="text-white mb-3 animated8">Oil <span class="text-theme"></span> <span class="text-theme">Producing</span> Company</h1>
@@ -158,16 +214,16 @@
                                             </p> <a class="btn btn-theme btn-radius animated7" href="about.html">Learn More</a>
                                             <a class="btn btn-border btn-radius animated6" href="contact.html">Contact US</a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item" data-bg-img="images/bg/slider1.jpg" data-overlay="6">
+                    <div class="item" data-bg-img="images/bg/slider1.jpg">
                         <div class="align-center">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-10 col-md-12 mx-auto">
+                                   <!--    <div class="col-lg-10 col-md-12 mx-auto">
                                         <div class="box-shadow p-sm-5 p-2 banner-1 position-relative" data-bg-color="rgba(255,255,255,0.030)">
                                             <h5 class="text-white mb-3 letter-space-3 animated6">Our Priority</h5>
                                             <h1 class="text-white mb-3 animated8">Health, <span class="text-theme"> Safety  </span> and <span class="text-theme">Environment</span></h1>
@@ -175,16 +231,16 @@
                                             <a class="btn btn-theme btn-radius animated7" href="healthsafetyandenvironment.html">Learn More</a>
                                             <a class="btn btn-border btn-radius animated6" href="contact.html">Contact US</a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item" data-bg-img="images/bg/02.jpg" data-overlay="6">
+                    <div class="item" data-bg-img="images/bg/02.jpg">
                         <div class="align-center">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-10 col-md-12 mx-auto">
+                                   <!--    <div class="col-lg-10 col-md-12 mx-auto">
                                         <div class="box-shadow p-sm-5 p-2 banner-1 position-relative" data-bg-color="rgba(255,255,255,0.030)">
                                             <h5 class="text-white mb-3 letter-space-3 animated6">The Future</h5>
                                             <h1 class="text-white mb-3 animated8">Energy’s <span class="text-theme">optimum </span> usage <span class="text-theme"></span></h1>
@@ -192,11 +248,12 @@
                                             </p> <a class="btn btn-theme btn-radius animated7" href="operations.html">Learn More</a>
                                             <a class="btn btn-border btn-radius animated6" href="contact.html">Contact US</a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
+        
                 </div>
             </section>
 
@@ -483,7 +540,7 @@
                         <div class="row text-center">
                             <div class="col-md-8 mx-auto">
                                 <div class="section-title">
-                                    <h2 class="title">Our <span> Testimonial</span></h2>
+                                    <h2 class="title">Employee <span>  Perspective</span></h2>
                                 </div>
                             </div>
                         </div>
@@ -504,11 +561,14 @@
                                                         </div>
                                                         <div class="flex-grow-1 ms-md-5 mt-5 mt-md-0">
                                                             <div class="testimonial-content"> <span><i class="fas fa-quote-left"></i></span>
-                                                                <p>consectetur adipisicing elit. Totam mollitia incidunt vero cupiditate obcaecati iusto tempora unde! Numquam officiis, quae adipisci quam laudantium nulla modi. adipisci quam laudantium nulla
-                                                                    modi. Totam mollitia incidunt vero cupiditate obcaecati</p>
+                                                                <p>We have been working to transform our company and make investments that will secure
+                                                                    our ability to continue to create economic value well into the future. By integrating
+                                                                    sustainability into our wider corporate strategy, and by focusing on reservoir productivity
+                                                                    and asset and well integrity, we are positioning ourselves for continued growth and success
+                                                                    as a good corporate citizen.”</p>
                                                                 <div class="testimonial-caption">
-                                                                    <h6>John Doe -</h6>
-                                                                    <label>Employee</label>
+                                                                    <h6>Kenji Kawashima</h6>
+                                                                    <label>Senior Coordinator</label>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -531,11 +591,14 @@
                                                         </div>
                                                         <div class="flex-grow-1 ms-md-5 mt-5 mt-md-0">
                                                             <div class="testimonial-content"> <span><i class="fas fa-quote-left"></i></span>
-                                                                <p>consectetur adipisicing elit. Totam mollitia incidunt vero cupiditate obcaecati iusto tempora unde! Numquam officiis, quae adipisci quam laudantium nulla modi. adipisci quam laudantium nulla
-                                                                    modi. Totam mollitia incidunt vero cupiditate obcaecati</p>
+                                                                <p>At Bunduq, we invest in the personal and professional growth of our employees to
+                                                                    secure a sustainable future for the company. This commitment to our people also extends
+                                                                    to the communities we operate in, and we engage in activities to support wider social
+                                                                    development. Whether inside or outside of Bunduq, it is people that are the foundation to
+                                                                    transforming society and the businesses that operate within it.</p>
                                                                 <div class="testimonial-caption">
-                                                                    <h6>Kelly Rain -</h6>
-                                                                    <label></label>
+                                                                    <h6>Assma Al-Adawi</h6>
+                                                                    <label>Quality Management System Specialist</label>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -558,11 +621,42 @@
                                                         </div>
                                                         <div class="flex-grow-1 ms-md-5 mt-5 mt-md-0">
                                                             <div class="testimonial-content"> <span><i class="fas fa-quote-left"></i></span>
-                                                                <p>consectetur adipisicing elit. Totam mollitia incidunt vero cupiditate obcaecati iusto tempora unde! Numquam officiis, quae adipisci quam laudantium nulla modi. adipisci quam laudantium nulla
-                                                                    modi. Totam mollitia incidunt vero cupiditate obcaecati</p>
+                                                                <p>“As a company extracting hydrocarbon resources in a marine environment, we endeavor
+                                                                    to minimize and mitigate our impact on the marine ecosystem. We have robust systems
+                                                                    in place to reduce the chances of an oil spill from occurring. Through our environmental
+                                                                    regeneration efforts, we built an artificial coral reef to support marine life and biodiversity</p>
                                                                 <div class="testimonial-caption">
-                                                                    <h6>Jamy Lynn -</h6>
-                                                                    <label>Manager</label>
+                                                                    <h6>Aitzaz Raza</h6>
+                                                                    <label>Environmental Engineer</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-10">
+                                                <div class="testimonial position-relative">
+                                                    <div class="d-md-flex align-items-center">
+                                                        <div class="flex-shrink-0">
+                                                            <div class="testimonial-avatar">
+                                                                <div class="testimonial-img">
+                                                                    <img class="img-fluid" src="images/thumbnail/04.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-md-5 mt-5 mt-md-0">
+                                                            <div class="testimonial-content"> <span><i class="fas fa-quote-left"></i></span>
+                                                                <p>The health, safety and well-being of our employees cannot be understated. We work hard
+                                                                    to ensure that our employees return home safe every day, which is why we are always
+                                                                    seeking to strengthen our approach to building a safety culture and prevent workplace and
+                                                                    occupational injuries</p>
+                                                                <div class="testimonial-caption">
+                                                                    <h6>Ahmed Roble -</h6>
+                                                                    <label>Safety Engineer</label>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -595,7 +689,7 @@
 
                 <!--blog start-->
 
-                <section>
+          <!--      <section>
                     <div class="container">
                         <div class="row text-center">
                             <div class="col-lg-8 col-md-10 mx-auto">
@@ -666,7 +760,7 @@
                         </div>
                     </div>
                 </section>
-
+-->
                 <!--blog end-->
 
 
@@ -792,7 +886,7 @@
 
     <!-- inject js end -->
 
-<!-- <script>
+ <!--<script>
  $(document).ready(function(){
   $(document).bind("contextmenu",function(e){
   return false;
