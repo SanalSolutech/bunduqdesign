@@ -2007,7 +2007,7 @@ blockquote {
 }
 
 .portfolio-item:before {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 13%);
     content: "";
     transform: translateX(-110%);
     position: absolute;

@@ -303,7 +303,7 @@ section {
 }
 
 .banner-1::before {
-    border: 10px solid rgba(255, 255, 255, 0.1);
+    border: 10px solid rgba(255, 255, 255, 0);
     content: "";
     height: 120%;
     left: 50%;
@@ -765,4 +765,21 @@ button.fontbutton {
 button.fontbutton.btn.btn-sm.btn-border.btn-radius.mb-2 {
     height: 36px;
     margin: 2px;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.418);
+    width: 100vw;
+    height: 100vh;
+}
+
+.topbar-link.d-md-block.d-none {
+    display: none !important;
+}
+
+.mfp-bottom-bar {
+    display: none !important;
 }
